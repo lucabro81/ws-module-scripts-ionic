@@ -1,0 +1,8 @@
+{
+    "txt":[
+      "import {WarningLevel} from \"ws-module\";",
+      "",
+      "export interface EndPointVO {",
+      "{endpoint_obj}}"
+    ]
+}

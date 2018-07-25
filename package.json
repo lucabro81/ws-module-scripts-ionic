@@ -1,0 +1,30 @@
+{
+  "name": "ws-module-scripts-ionic",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "src/"
+  ],
+  "bin": {
+    "add-web-service": "src/add_web_service_ionic.js",
+    "mod-web-service": "src/mod_web_service_ionic.js",
+    "create-endpoints": "src/create_endpoints_ionic.js"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucabro81/ws-module-scripts-ionic.git"
+  },
+  "author": "Luca Brognara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucabro81/ws-module-scripts-ionic/issues"
+  },
+  "homepage": "https://github.com/lucabro81/ws-module-scripts-ionic#readme"
+}
