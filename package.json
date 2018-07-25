@@ -11,7 +11,7 @@
   "bin": {
     "add-web-service": "src/add_web_service_ionic.js",
     "mod-web-service": "src/mod_web_service_ionic.js",
-    "create-endpoints": "src/create_endpoints_ionic.js"
+    "create-endpoints": "src/create_endpoints.js"
   },
   "dependencies": {
     "child_process": "^1.0.2",

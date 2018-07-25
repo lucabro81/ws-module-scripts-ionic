@@ -29,20 +29,20 @@ let package_json = require(local_path);
 // FIXME: utilizzare JSON.stringify con i parametri aggiuntivi per la formattazione
 
 if (package_json["scripts"]) {
-    if (!package_json["scripts"]["add-web-service"]) {
-        package_json["scripts"]["add-web-service"] = "add-web-service";
+    if (!package_json["scripts"]["add-web-service-ionic"]) {
+        package_json["scripts"]["add-web-service-ionic"] = "add-web-service-ionic";
     }
-    if (!package_json["scripts"]["mod-web-service"]) {
-        package_json["scripts"]["mod-web-service"] = "mod-web-service";
+    if (!package_json["scripts"]["mod-web-service-ionic"]) {
+        package_json["scripts"]["mod-web-service-ionic"] = "mod-web-service-ionic";
     }
-    if (!package_json["scripts"]["create-endpoints"]) {
+    if (!package_json["scripts"]["create-endpoints-ionic"]) {
         package_json["scripts"]["create-endpoints"] = "create-endpoints";
     }
 }
 else {
     package_json["scripts"] = {
-        "add-web-service": "add-web-service",
-        "mod-web-service": "mod-web-service",
+        "add-web-service-ionic": "add-web-service-ionic",
+        "mod-web-service-ionic": "mod-web-service-ionic",
         "create-endpoints": "create-endpoints"
     }
 }
