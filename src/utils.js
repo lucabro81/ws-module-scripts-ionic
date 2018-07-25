@@ -2,17 +2,17 @@
 const utils = exports;
 
 // DEFAULT CONFIG
-
-// let config_basePath = "dist/";
-// let config_services = "services/";
-// let config_endpoints = "utils/Endpoints.ts";
-//
 let config_basePath  = "src/";
+let config_appModule = "app/app.module.ts";
 let config_services  = "services/web/";
 let config_endpoints = "utils/Endpoints.ts";
 
 if (process.env.npm_package_config_basePath) {
     config_basePath = process.env.npm_package_config_basePath;
+}
+
+if (process.env.npm_package_config_appModule) {
+    config_appModule = process.env.npm_package_config_appModule;
 }
 
 if (process.env.npm_package_config_services) {
@@ -24,6 +24,7 @@ if (process.env.npm_package_config_endpoints) {
 }
 
 utils.base_path = process.cwd() + "/" + config_basePath;
+utils.path_app_module = process.cwd() + "/" + config_endpoints;
 utils.path_services = utils.base_path + config_services;
 utils.path_endpoints = utils.base_path + config_endpoints;
 

@@ -160,6 +160,14 @@ stdin.once('data', function(data) {
                 service_method_listener_template, 'utf8');
         });
 
+        // scrittura su app.module
+        let app_module = fs.readFileSync(utils.path_app_module);
+        if (app_module.includes(placeholders.end_services)) {
+            app_module.replace(placeholders.end_services, "\t\t" + utils.capitalizeFirstLetter(name) + "Service" + ",\n\t\t" + placeholders.end_services);
+        }
+
+        fs.writeFileSync(utils.path_app_module, app_module, 'utf8');
+
         // alla fine aggiungo i file al worktree di git
         cp.exec('git add ./src/services/web/' + nome_classe);
 
